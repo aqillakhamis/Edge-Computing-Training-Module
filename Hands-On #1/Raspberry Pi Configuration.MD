@@ -119,7 +119,9 @@ We will use Real VNC Viewer for our Raspberry Pi User Interface (UI). In your te
 sudo raspi-config
 ```
 
-Go to interface option > VNC > select `enable`
+Go to interface option > VNC > select `enable`. 
+
+You have another option to access your UI remotely by using Raspberry Pi Connect. 
 
 
 

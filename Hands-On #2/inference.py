@@ -14,13 +14,10 @@ output_details = interpreter.get_output_details()
 with open("labels.txt", "r") as f:
     labels = [line.strip() for line in f.readlines()]
 
-print(labels)
-
 # # load the labels by define in the inference script
 # labels = ['0 Helicopter', '1 Drone', '2 Plane']
 
 # print(labels)
-
 
 # Preprocess the image for grayscale and the correct size
 def preprocess_image(frame, input_size):

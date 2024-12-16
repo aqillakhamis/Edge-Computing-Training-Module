@@ -1,9 +1,9 @@
 import cv2
 import numpy as np
-import tflite_runtime.interpreter as tflite
+import tensorflow as tf
 
 # Load the TensorFlow Lite model
-interpreter = tflite.Interpreter(model_path="model.tflite")
+interpreter = tf.lite.Interpreter(model_path="model.tflite")
 interpreter.allocate_tensors()
 
 # Get input and output details
@@ -16,10 +16,10 @@ with open("labels.txt", "r") as f:
 
 print(labels)
 
-# load the labels by define in the inference script
-labels = ['0 Helicopter', '1 Drone', '2 Plane']
+# # load the labels by define in the inference script
+# labels = ['0 Helicopter', '1 Drone', '2 Plane']
 
-print(labels)
+# print(labels)
 
 
 # Preprocess the image for grayscale and the correct size

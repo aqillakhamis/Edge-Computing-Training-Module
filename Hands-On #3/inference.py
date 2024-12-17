@@ -9,7 +9,7 @@ from sklearn.preprocessing import LabelBinarizer
 # Global variables
 img_size = 224  # Image size for ResNet50 model
 channels = 3  # RGB channels
-model_path = 'resnet50.h5'  # Path to the saved model
+model_path = 'resnet50.h5'  # Path to the saved model, replace with your saved model
 classes = ['helicopter', 'drone', 'plane']  # Update with your class names
 label_binarizer = LabelBinarizer()
 label_binarizer.fit(classes)  # You need to fit the label binarizer with your class labels
@@ -47,7 +47,7 @@ def predict(image_path):
 
 # Example usage
 if __name__ == "__main__":
-    image_path = "dataset/drone/71JE-QG1FiL.jpg"
+    image_path = "dataset/drone/71JE-QG1FiL.jpg" # change this path with your own file path
 
     # Check if the file exists
     if os.path.isfile(image_path):
